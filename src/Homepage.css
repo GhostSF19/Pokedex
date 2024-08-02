@@ -1,0 +1,88 @@
+.homepage {
+  background: linear-gradient(to bottom, #ffeb3b, #fbc02d); /* Gradient from bright yellow to dark yellow */
+  height: 100vh;
+  position: relative; /* Allows absolute positioning within */
+  overflow: hidden; /* Ensures content does not overflow */
+}
+
+.text-container {
+  color: black; /* Set the text color to black */
+  position: absolute;
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right edge */
+  z-index: 3; /* Ensure text is on top */
+}
+
+.image-container {
+  position: absolute; /* Position it relative to the homepage */
+  right: 20px; /* Adjust to move closer to the center */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  z-index: 1; /* Ensure images are below text */
+}
+
+.vector {
+  width: 223.88px; /* Set width */
+  height: 107.22px; /* Set height */
+  position: absolute; /* Ensure it stacks behind Pikachu */
+  z-index: 0; /* Behind Pikachu */
+  bottom: 30%; /* Move it a bit lower */
+  right: 10px; /* Adjust to the right edge */
+}
+
+.pikachu {
+  max-height: 647.2px; /* Adjust size as needed */
+  max-width: 647.31px; /* Adjust size as needed */
+  width: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+  position: relative; /* Position relative to the image container */
+  z-index: 2; /* Ensure it's on top of vector and pokeball */
+}
+
+.pokeball {
+  width: 166.97px; /* Set width */
+  height: 167.55px; /* Set height */
+  position: absolute; /* Ensure it stacks behind Pikachu */
+  z-index: 0; /* Behind Pikachu */
+  top: 57.05px; /* Position from the top */
+  left: 69.61px; /* Position from the left */
+  opacity: 0.9; /* Adjust opacity */
+  transform: rotate(4.41deg); /* Rotate the image */
+  transform-origin: center; /* Ensures rotation happens around the center */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .text-container {
+    bottom: 10px; /* Reduce space from the bottom */
+    right: 10px; /* Reduce space from the right edge */
+    font-size: 1.5rem; /* Adjust text size */
+  }
+
+  .image-container {
+    right: 10px; /* Adjust for smaller screens */
+    top: 60%; /* Adjust vertical position */
+    transform: translateY(-50%); /* Maintain vertical centering */
+  }
+
+  .vector {
+    width: 150px; /* Adjust size for mobile */
+    height: 70px; /* Adjust size for mobile */
+    bottom: 20%; /* Adjust lower for mobile */
+  }
+
+  .pikachu {
+    max-height: 300px; /* Adjust size for mobile */
+    max-width: 300px; /* Adjust size for mobile */
+  }
+
+  .pokeball {
+    width: 120px; /* Adjust size for mobile */
+    height: 121px; /* Adjust size for mobile */
+    top: 30px; /* Adjust top position for mobile */
+    left: 30px; /* Adjust left position for mobile */
+    opacity: 0.9; /* Maintain opacity */
+    transform: rotate(45.41deg); /* Maintain rotation */
+    transform-origin: center; /* Ensure rotation is around the center */
+  }
+}
