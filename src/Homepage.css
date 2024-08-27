@@ -5,16 +5,8 @@
   overflow: hidden; /* Hide overflowing content */
 }
 
-.navbar-custom {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  display: flex;
-  flex-direction: row;
-  align-content: flex-end;
-  justify-content: flex-end;
-  gap: 15px; /* Space between links */
-  z-index: 3;
+.navbar {
+  background-color: #ffff00;
 }
 
 .nav-link {
@@ -28,102 +20,3 @@
   border-bottom: 2px solid #000; /* Black underline on hover */
 }
 
-.text-container {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-}
-
-.text-container h1 {
-  color: #000; /* Black color for text */
-}
-
-.image-container {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.pikachu {
-  top: 72vw;
-  max-height: 27%;
-  max-width: 25%;
-  width: auto;
-  height: auto;
-  right: 18vw;
-  position: absolute;
-  z-index: 2;
-}
-
-.pokeball1 {
-  width: 15%;
-  height: 17%;
-  position: absolute;
-  bottom: 91vw;
-  left: 38vw;
-  z-index: 1;
-}
-
-.pokeball2 {
-  width: 23%;
-  height: 251.96px;
-  position: absolute;
-  bottom: 126vw;
-  left: 76.9vw;
-  z-index: 1;
-}
-
-.vector {
-  width: 25%;
-  height: 107.22px;
-  position: absolute;
-  bottom: 94vw;
-  left: 63vw;
-}
-
-.vector2 {
-  width: 19%;
-  height: 164.59px;
-  position: absolute;
-  bottom: 73vw;
-  left: 34vw;
-}
-
-.poklogo {
-  width: 20%;
-  height: 63px;
-  position: absolute;
-  top: 10px;
-  left: 12vw;
-  z-index: 1;
-}
-
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-  .navbar-custom {
-    flex-direction: row; /* Horizontal alignment for mobile */
-    gap: 10px; /* Adjust space between links */
-    top: 10px;
-    right: 10px;
-  }
-
-  .nav-link {
-    font-size: 1rem; /* Smaller font size for mobile */
-  }
-}
-
-@media (max-width: 576px) {
-  .navbar-custom {
-    flex-direction: column; /* Stack vertically on very small screens */
-    gap: 8px; /* Adjust space between links */
-    top: 5px;
-    right: 5px;
-  }
-
-  .nav-link {
-    font-size: 0.9rem; /* Even smaller font size for very small screens */
-  }
-}
