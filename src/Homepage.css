@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+
+
 .homepage {
   background: linear-gradient(to bottom, #ffff00, #f7d400); /* Gradient background from bright yellow to dark yellow */
   height: 100vh; /* Full viewport height */
@@ -13,10 +16,24 @@
   color: #000; /* Black color for text */
   text-decoration: none;
   font-size: 1.2rem; /* Default font size */
-  position: relative;
 }
 
 .nav-link:hover {
   border-bottom: 2px solid #000; /* Black underline on hover */
 }
 
+.pokeball1 {
+  max-width: 100%;
+}
+
+.custom-heading {
+  font-family: 'Karla', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 49.1px;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-left: 10vw; /* Adjust margins to control horizontal width */
+  margin-right: 10vw; /* Adjust margins to control horizontal width */
+  margin-bottom: 1rem; /* Adjust space below the heading */
+}
