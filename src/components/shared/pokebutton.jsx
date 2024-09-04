@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
 const PokeButton = ({ onClick, text, type = 'button', disabled = false }) => {
     return (
         <button
             type={type}
             onClick={onClick}
             disabled={disabled}
-            className="btn btn-primary btn-lg btn-block"
+            className="btn btn-primary poke-button btn-lg btn-block"
         >
             {text}
         </button>

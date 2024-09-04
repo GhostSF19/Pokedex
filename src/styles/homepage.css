@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+
 
 
 .homepage {
-  background: linear-gradient(to bottom, #ffff00, #f7d400); /* Gradient background from bright yellow to dark yellow */
+  background: linear-gradient(to bottom, #F5DB13, #F2B807, #F28F16); /* Gradient background */
   height: 100vh; /* Full viewport height */
   position: relative;
   overflow: hidden; /* Hide overflowing content */
 }
 
-.navbar {
-  background-color: #ffff00;
-}
+
 
 .nav-link {
   color: #000; /* Black color for text */
@@ -29,7 +27,7 @@
 .custom-heading {
   font-family: 'Karla', sans-serif;
   font-size: 42px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 49.1px;
   letter-spacing: 4px;
   text-align: center;
@@ -37,3 +35,7 @@
   margin-right: 10vw; /* Adjust margins to control horizontal width */
   margin-bottom: 1rem; /* Adjust space below the heading */
 }
+
+
+
+

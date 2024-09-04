@@ -1,0 +1,27 @@
+/* poke_button.css */
+
+.poke-button {
+    background-color: #73D677 !important; /* Default background color with high priority */
+    color: rgb(15, 15, 15) !important; /* Default font color */
+    width: 80% !important; /* Full width by default */
+    height:12vw !important; /* Full height by default */
+    padding: 10px 20px !important; /* Padding for a better look */
+    font-size: 18px !important; /* Font size */
+    font-weight: 700 !important; /* Font weight */
+    border-radius: 9px !important; /* Rounded corners */
+    border: none !important; /* Remove border */
+    cursor: pointer !important; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease !important; /* Smooth transition for color changes */
+}
+
+.poke-button:hover {
+    background-color: #657d96 !important; /* Change background on hover */
+    color: #ffffff !important; /* Change font color on hover */
+}
+
+.poke-button:disabled {
+    background-color: #cccccc !important; /* Disabled background color */
+    color: #73D677 !important; /* Disabled font color */
+    cursor: not-allowed !important; /* Disabled cursor */
+   
+}

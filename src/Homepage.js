@@ -1,5 +1,5 @@
 import React from 'react';
-import './Homepage.css';
+import './styles/main.css';
 import PokeButton from './components/shared/pokebutton';
 
 const Homepage = () => {
@@ -13,7 +13,7 @@ const Homepage = () => {
         <div className="px-5 col-5">
           <img src="/poklogo.png" alt="Poklogo" className="poklogo img-fluid" />
         </div>
-        <div className="px-5 d-flex justify-content-end col-5 col-md-2">
+        <div className="px-5 gap-2 d-flex justify-content-end col-5 col-md-2">
           <a className="nav-link" href="#">Home</a>
           <a className="nav-link" href="#">Pokédex</a>
         </div>
@@ -28,7 +28,7 @@ const Homepage = () => {
         </div>
         <div className="text-center mb-4">
           <h1 className="custom-heading">
-            <strong>Find</strong> all your <br /> favorite <br /> <strong>Pokemon</strong>
+            <strong className="font-weight-bold">Find</strong> all your <br /> favorite <br /> <strong>Pokemon</strong>
           </h1>
           <h4 className="text-muted">
             You can know the type of Pokemon, its strengths, disadvantages and abilities
