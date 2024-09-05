@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles/main.css';
 import PokeButton from './components/shared/pokebutton';
 
 const Homepage = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const handleClick = () => {
     alert('Button clicked!');
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -13,11 +19,29 @@ const Homepage = () => {
         <div className="px-5 col-5">
           <img src="/poklogo.png" alt="Poklogo" className="poklogo img-fluid" />
         </div>
-        <div className="px-5 gap-2 d-flex justify-content-end col-5 col-md-2">
+        <div className="px-5 gap-2 d-flex justify-content-end col-5 col-md-2 d-none d-md-flex">
           <a className="nav-link" href="#">Home</a>
           <a className="nav-link" href="#">Pokédex</a>
         </div>
+
+        {/* Hamburger Icon for mobile view */}
+        <button
+          className="navbar-toggler d-md-none"
+          type="button"
+          onClick={toggleMenu}
+        >
+          <span className="navbar-toggler-icon"></span> {/* Bootstrap renders the icon */}
+        </button>
+
+        {/* Hamburger Menu that toggles on click */}
+        {isMenuOpen && (
+          <div className="d-md-none hamburger-menu">
+            <a className="nav-link" href="#">Home</a>
+            <a className="nav-link" href="#">Pokédex</a>
+          </div>
+        )}
       </div>
+
       <div className="d-flex flex-column align-items-center justify-content-center h-100">
         <div className="text-center mb-4">
           <img
@@ -36,7 +60,10 @@ const Homepage = () => {
         </div>
         <PokeButton onClick={handleClick} text={"See Pokemons"} />
       </div>
-      <div className="text-center mt-4"><h4>by Denis</h4></div>
+
+      <div className="text-center mt-4">
+        <h4>by Denis</h4>
+      </div>
     </div>
   );
 };

@@ -1,6 +1,3 @@
-
-
-
 .homepage {
   background: linear-gradient(to bottom, #F5DB13, #F2B807, #F28F16); /* Gradient background */
   height: 100vh; /* Full viewport height */
@@ -8,7 +5,42 @@
   overflow: hidden; /* Hide overflowing content */
 }
 
+.navbar {
+  height: 7vh;
+  background-color: #F5DB13; /* Light background for navbar */
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  position: relative;
+}
 
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  color: #000; /* Black hamburger icon */
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 4vh; /* Align below navbar */
+  width: 100%;
+  background-color: #F5DB13; /* White background for the menu */
+  z-index: 1000;
+}
+
+.hamburger-menu a {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #F5DB13;
+  color: #000; /* Black text for menu items */
+  text-decoration: none;
+}
+
+.hamburger-menu a:hover {
+  background-color: #F5DB13; /* Light background on hover */
+}
 
 .nav-link {
   color: #000; /* Black color for text */
@@ -35,7 +67,3 @@
   margin-right: 10vw; /* Adjust margins to control horizontal width */
   margin-bottom: 1rem; /* Adjust space below the heading */
 }
-
-
-
-
