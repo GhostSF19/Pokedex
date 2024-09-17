@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
-import './styles/main.css';
-import PokeButton from './components/shared/pokebutton';
+import '../../styles/main.css';
+import PokeButton from '../shared/pokebutton';
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Homepage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleClick = () => {
-    alert('Button clicked!');
+    navigate('/pokepage');
   };
 
   const toggleMenu = () => {
@@ -14,14 +17,14 @@ const Homepage = () => {
   };
 
   return (
-    <div className="homepage">
+    <div className="homepage page-container">
       <div className="navbar navbar-light navbar-custom shadow">
         <div className="px-5 col-5">
           <img src="/poklogo.png" alt="Poklogo" className="poklogo img-fluid" />
         </div>
         <div className="px-5 gap-2 d-flex justify-content-end col-5 col-md-2 d-none d-md-flex">
-          <a className="nav-link" href="#">Home</a>
-          <a className="nav-link" href="#">Pokédex</a>
+          <Link to="/" className="">Home</Link>
+          <Link to="/pokepage" className="">Pokédex</Link>
         </div>
 
         {/* Hamburger Icon for mobile view */}
@@ -36,8 +39,8 @@ const Homepage = () => {
         {/* Hamburger Menu that toggles on click */}
         {isMenuOpen && (
           <div className="d-md-none hamburger-menu">
-            <a className="nav-link" href="#">Home</a>
-            <a className="nav-link" href="#">Pokédex</a>
+            <Link to="/">Home</Link>
+            <Link to="/pokepage">Pokédex</Link>
           </div>
         )}
       </div>

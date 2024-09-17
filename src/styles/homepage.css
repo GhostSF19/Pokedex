@@ -1,5 +1,4 @@
 .homepage {
-  background: linear-gradient(to bottom, #F5DB13, #F2B807, #F28F16); /* Gradient background */
   height: 100vh; /* Full viewport height */
   position: relative;
   overflow: hidden; /* Hide overflowing content */

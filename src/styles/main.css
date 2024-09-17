@@ -1,2 +1,6 @@
 @import './homepage.css';
 @import './poke_button.css';
+
+.page-container {
+background: linear-gradient(to bottom, #F5DB13, #F2B807, #F28F16); /* Gradient background */
+}
