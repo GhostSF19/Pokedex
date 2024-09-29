@@ -1,49 +1,20 @@
 import React, { useState } from 'react';
 import '../../styles/main.css';
 import PokeButton from '../shared/pokebutton';
-import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../shared/Navbar'; // Import the Navbar
 
 const Homepage = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleClick = () => {
     navigate('/pokepage');
   };
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
     <div className="homepage page-container">
-      <div className="navbar navbar-light navbar-custom shadow">
-        <div className="px-5 col-5">
-          <img src="/poklogo.png" alt="Poklogo" className="poklogo img-fluid" />
-        </div>
-        <div className="px-5 gap-2 d-flex justify-content-end col-5 col-md-2 d-none d-md-flex">
-          <Link to="/" className="">Home</Link>
-          <Link to="/pokepage" className="">Pokédex</Link>
-        </div>
-
-        {/* Hamburger Icon for mobile view */}
-        <button
-          className="navbar-toggler d-md-none"
-          type="button"
-          onClick={toggleMenu}
-        >
-          <span className="navbar-toggler-icon"></span> {/* Bootstrap renders the icon */}
-        </button>
-
-        {/* Hamburger Menu that toggles on click */}
-        {isMenuOpen && (
-          <div className="d-md-none hamburger-menu">
-            <Link to="/">Home</Link>
-            <Link to="/pokepage">Pokédex</Link>
-          </div>
-        )}
-      </div>
+      {/* Use the Navbar component here */}
+      <Navbar />
 
       <div className="d-flex flex-column align-items-center justify-content-center h-100">
         <div className="text-center mb-4">
