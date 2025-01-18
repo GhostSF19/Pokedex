@@ -1,0 +1,49 @@
+.error-page-container {
+    background-color: #D93E30 !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+  }
+
+.error-images {
+    position: relative;
+    z-index: 2;
+}
+
+.background-container {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    width: 160%;
+    height: auto;
+}
+
+.rocket-container {
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+    margin-right: -28px;
+}
+
+.text-and-button-container {
+    margin-top: 100px; /* Adjust this value to move the text and button */
+    z-index: 3; /* Ensure text and button are above the images */
+}
+
+/* Optional: Control width of the 404 and Team Rocket images */
+.error-404-img {
+    width: 63%;
+    max-width: 100%;
+    opacity: 1;
+}
+
+.rocket-img {
+    max-width: 500px;
+    width: 80vw;
+    margin-top: 65px;
+}

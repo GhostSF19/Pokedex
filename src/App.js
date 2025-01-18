@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
 import Homepage from './components/views/Homepage';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Pokepage from './components/views/Pokepage';
+import Error404Page from './components/views/404errorpage'; // Import the 404 error page
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/pokepage" element={<Pokepage />} />
-          <Route path="*" element={<Homepage />} />
+          <Route path="*" element={<Error404Page />} /> {/* Use 404errorpage.js here */}
         </Routes>
       </Router>
     </div>
@@ -19,3 +20,4 @@ function App() {
 }
 
 export default App;
+
