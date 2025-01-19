@@ -1,3 +1,4 @@
+/* Main Page Container */
 .error-page-container {
     background-color: #D93E30 !important;
     min-height: 100vh;
@@ -7,13 +8,13 @@
     align-items: center;
     position: relative;
   }
-
-.error-images {
+  
+  .error-images {
     position: relative;
     z-index: 2;
-}
-
-.background-container {
+  }
+  
+  .background-container {
     position: absolute;
     top: 27%;
     left: 50%;
@@ -21,29 +22,102 @@
     z-index: 0;
     width: 160%;
     height: auto;
-}
-
-.rocket-container {
+  }
+  
+  .rocket-container {
     position: relative;
     z-index: 1;
     margin-top: 100px;
     margin-right: -28px;
-}
-
-.text-and-button-container {
-    margin-top: 100px; /* Adjust this value to move the text and button */
-    z-index: 3; /* Ensure text and button are above the images */
-}
-
-/* Optional: Control width of the 404 and Team Rocket images */
-.error-404-img {
+  }
+  
+  .error-404-img {
     width: 63%;
     max-width: 100%;
     opacity: 1;
-}
-
-.rocket-img {
+  }
+  
+  .rocket-img {
     max-width: 500px;
     width: 80vw;
     margin-top: 65px;
-}
+  }
+  
+  /* Text Container Styling */
+  .error-text-container {
+    z-index: 3;
+    position: relative;
+    margin-top: -33px;
+    text-align: center;
+  }
+  
+  .text-block {
+    line-height: 1.5;
+  }
+  
+  .rocket-text-large {
+    font-size: 1.8rem;
+  }
+  
+  /* Button Styling */
+  .error-button-container {
+    z-index: 3;
+    margin-top: 50px;
+  }
+  
+  /* PokeButton Styles */
+  .poke-button {
+    background-color: #73D677 !important;
+    color: rgb(15, 15, 15) !important;
+    width: 80% !important;
+    height: 12vw !important;
+    padding: 10px 20px !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    border-radius: 9px !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease, color 0.3s ease !important;
+  }
+  
+  .poke-button:hover {
+    background-color: #657d96 !important;
+    color: #ffffff !important;
+  }
+  
+  .poke-button:disabled {
+    background-color: #cccccc !important;
+    color: #73D677 !important;
+    cursor: not-allowed !important;
+  }
+  
+  /* Additional styles for the second button */
+  .poke-button-second {
+    background-color: #fdf9119f !important;  /* Different color for the second button */
+    color: rgb(15, 15, 15) !important; /* Font color */
+    width: 120% !important;  /* Adjusted width, feel free to tweak if it's too large */
+    height: 11vw !important; /* Custom height - increased for better visibility */
+    font-size: 16px !important; /* Adjusted font size for better legibility */
+    font-weight: 550 !important; /* Bold text */
+    border-radius: 9px !important; /* Rounded corners */
+    border: none !important; /* No border */
+    cursor: pointer !important; /* Pointer cursor on hover */
+    padding: 12px 20px !important; /* Padding for better button appearance */
+    transition: background-color 0.3s ease, color 0.3s ease !important; /* Smooth transition for hover effect */
+    display: block !important; /* Make the button a block element so it can be centered */
+    margin-left: -5% !important; /* Center the button horizontally */
+    margin-right: auto !important; /* Center the button horizontally */
+  }
+  
+  .poke-button-second:hover {
+    background-color: #f3eb0d5e !important; /* Darker background color on hover */
+    color: #ffffff !important; /* Change font color to white on hover */
+  }
+  
+  .poke-button-second:disabled {
+    background-color: #cccccc !important; /* Disabled background color */
+    color: #979514fa !important; /* Disabled font color */
+    cursor: not-allowed !important; /* Disabled cursor */
+  }
+  
+  
