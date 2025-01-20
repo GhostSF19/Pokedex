@@ -18,11 +18,13 @@
   background: transparent;
   font-size: 1.5rem;
   color: #000; /* Black hamburger icon */
+  margin-left: 16.8rem;
+  margin-top:  -1rem;
 }
 
 .hamburger-menu {
   position: absolute;
-  top: 4vh; /* Align below navbar */
+  top: 6vh; /* Align below navbar */
   width: 100%;
   background-color: #F5DB13; /* White background for the menu */
   z-index: 1000;

@@ -28,7 +28,7 @@ const Homepage = () => {
           <h1 className="custom-heading">
             <strong className="font-weight-bold">Find</strong> all your <br /> favorite <br /> <strong>Pokemon</strong>
           </h1>
-          <h4 className="text-muted">
+          <h4 className="text-wrap p-3 text-muted">
             You can know the type of Pokemon, its strengths, disadvantages and abilities
           </h4>
         </div>
