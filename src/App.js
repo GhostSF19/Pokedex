@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Homepage from './components/views/Homepage';
 import Pokepage from './components/views/Pokepage';
+import DetailsPage from './components/views/DetailsPage'; // Import the DetailsPage
 import Error404Page from './components/views/404errorpage'; // Import the 404 error page
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/pokepage" element={<Pokepage />} />
+          <Route path="/details/:id" element={<DetailsPage />} /> {/* Add the DetailsPage route */}
           <Route path="*" element={<Error404Page />} /> {/* Use 404errorpage.js here */}
         </Routes>
       </Router>
@@ -20,4 +22,3 @@ function App() {
 }
 
 export default App;
-
