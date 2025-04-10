@@ -19,4 +19,24 @@
   .pokemon-button:hover {
     background-color: #e0e0e0;
   }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
   
+  .pagination button {
+    padding: 10px 20px;
+    background-color: #73D677;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .pagination button:disabled {
+    background-color: #73D677;
+    cursor: not-allowed;
+  }
+    
